@@ -3,13 +3,13 @@ navbar:
   title: "fronteira cognitiva"
   left:
     - text: "Home"
-      href: index.html
+      href: /index.html
     - text: "Journal"
-      href: Journal.html
+      href: /Journal.html
     - text: "Links"
-      href: Links.html
+      href: /Links.html
     - text: "Outros"
       menu:
         - text: "Teste"
-          href: RMarkdown_Basico.html
+          href: /posts/RMarkdown_Completo.html
 output_dir: "docs"
