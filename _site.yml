@@ -1,6 +1,6 @@
-name: "MyLabJournal"
+name: "fronteira cognitiva"
 navbar:
-  title: "MyLabJournal"
+  title: "fronteira cognitiva"
   left:
     - text: "Home"
       href: index.html
