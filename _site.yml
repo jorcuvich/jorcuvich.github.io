@@ -12,4 +12,7 @@ navbar:
       menu:
         - text: "Teste"
           href: RMarkdown_Basico.html
+  right:
+    - text: "Home"
+      href: index.html
 output_dir: "docs"
