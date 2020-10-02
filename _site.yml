@@ -2,7 +2,7 @@ name: "fronteira cognitiva"
 navbar:
   title: "fronteira cognitiva"
   left:
-    - text: "Home"
+    - text: "Homeeee"
       href: index.html
     - text: "Journal"
       href: Journal.html
@@ -13,6 +13,6 @@ navbar:
         - text: "Teste"
           href: RMarkdown_Basico.html
   right:
-    - text: "Home"
+    - text: "Homerrrr"
       href: index.html
 output_dir: "docs"
