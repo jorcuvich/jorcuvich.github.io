@@ -13,6 +13,6 @@ navbar:
         - text: "Teste"
           href: RMarkdown_Basico.html
   right:
-    - text: "Homerrrr"
-      href: index.html
+    - text: "Teste"
+      href: teste.html
 output_dir: "docs"
