@@ -14,5 +14,5 @@ navbar:
           href: RMarkdown_Basico.html
   right:
     - text: "Teste"
-      href: teste.html
+      href: Teste
 output_dir: "docs"
