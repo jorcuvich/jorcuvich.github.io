@@ -19,25 +19,18 @@ output: html_document
 
 # **fronteira cognitiva**
 
-This is a template example for lab journaling. Students in Matt Crump's Human Cognition and Performance Lab will use this template to learn R, and other things. Students can replace this text with more fun things. People not in my lab can use this too.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur feugiat felis nec lacinia accumsan. Phasellus at rhoncus tellus. Praesent consectetur vulputate nunc, vitae fringilla lorem tempus quis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Maecenas in lorem a elit ullamcorper mollis sit amet pharetra nisi. Aliquam dignissim neque ut arcu cursus congue. Etiam condimentum tristique dolor vel luctus. Etiam id tellus molestie, vehicula nulla non, blandit leo. Nam libero dui, efficitur ut elit sit amet, ullamcorper iaculis dui. Donec eget magna elit. Nullam tristique orci sit amet neque pharetra, et venenatis enim vehicula. Donec volutpat ultrices posuere. Sed consequat justo ac ipsum eleifend venenatis. Aliquam nec euismod turpis. Suspendisse bibendum enim a ex tempus, at luctus massa molestie.
 
-## How to use
+Sed rutrum imperdiet viverra. Suspendisse iaculis, magna et feugiat condimentum, est ipsum eleifend libero, et viverra justo eros vel augue. Donec ut vestibulum urna. Aenean a iaculis magna. Nunc sodales mi eu nulla consequat, eget mollis arcu porttitor. Mauris sit amet ultricies turpis. Curabitur et nunc et arcu varius lobortis. Ut nec nisl malesuada, lobortis nunc nec, viverra ex. Donec dapibus commodo metus, nec ultrices eros luctus ut. Curabitur rhoncus libero eu diam consequat, vel tincidunt urna ultricies. In sagittis arcu dignissim enim iaculis commodo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vivamus massa elit, sodales et consequat nec, imperdiet finibus lacus. Nunc fermentum congue malesuada.
 
-1. fork the repo for this website and follow instructions on read me to get set up. [https://github.com/CrumpLab/LabJournalWebsite](https://github.com/CrumpLab/LabJournalWebsite)
-
-2. Blog/journal what you are doing in R, by editing the Journal.Rmd. See the [Journal page](https://crumplab.github.io/LabJournalWebsite/Journal.html) for an example of what to do to get started learning R.
-
-3. See the [links page](https://crumplab.github.io/LabJournalWebsite/Links.html) for lots of helpful links on learning R.
-
-4. Change everything to make it your own.
 
 
 </div>
 <div class="col-sm-6">
 
-### [Crump Lab: Human Cognition and Performance](https://crumplab.github.io)
+## .
 
-<a href = "https://crumplab.github.io">
-![](images/logo.png)
+<a href = "index.html">
+![](images/i_logo.png)
 </a>
 </div>

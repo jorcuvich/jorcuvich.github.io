@@ -1,18 +1,29 @@
 name: "fronteira cognitiva"
 navbar:
+  
   title: "fronteira cognitiva"
+  image: i_logo.png
   left:
-    - text: "Homeeee"
+    - text: "inicio"
       href: index.html
-#    - text: "Journal"
-#      href: Journal.html
-    - text: "Links"
-      href: Links.html
-    - text: "Outros"
+#    - text: "links"
+#      href: index_Links.html
+    - text: "outros"
       menu:
-        - text: "Teste"
+        - text: "teste"
           href: RMarkdown_Basico.html
   right:
-    - text: "Teste2"
-      href: index.html
+    - text: ""
+      icon: fa-github fa-lg
+      href: "https://github.com/fronteiracognitiva"
+    - text: ""
+      icon: fa-facebook-square fa-lg
+      href: "https://facebook.com/fronteiracognitiva/"
+    - text: ""
+      icon: fa-instagram fa-lg
+      href: "https://instagram.com/fronteiracognitiva"
+    - text: ""
+      icon: fa-youtube fa-lg
+      href: "https://www.youtube.com/channel/UC66qd2p_BltSFP7OjJ0exbA"
 output_dir: "docs"
+
