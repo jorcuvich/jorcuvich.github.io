@@ -4,8 +4,8 @@ navbar:
   left:
     - text: "Homeeee"
       href: index.html
-    - text: "Journal"
-      href: Journal.html
+#    - text: "Journal"
+#      href: Journal.html
     - text: "Links"
       href: Links.html
     - text: "Outros"
