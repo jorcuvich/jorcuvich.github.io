@@ -286,3 +286,41 @@ function drawChart() {
   }
 })();
 
+// Menu retrátil mobile
+(function initDrawer(){
+  const btn = document.getElementById('btn-menu');
+  const drawer = document.getElementById('drawer-nav');
+  const overlay = document.getElementById('overlay');
+  const themeDesktop = document.getElementById('toggle-theme');
+  const themeDrawer = document.getElementById('drawer-theme');
+
+  if(!btn || !drawer) return;
+
+  function openDrawer(){
+    document.body.classList.add('menu-open');
+    drawer.setAttribute('aria-hidden','false');
+    btn.setAttribute('aria-expanded','true');
+  }
+  function closeDrawer(){
+    document.body.classList.remove('menu-open');
+    drawer.setAttribute('aria-hidden','true');
+    btn.setAttribute('aria-expanded','false');
+  }
+  btn.addEventListener('click', ()=>{
+    const open = document.body.classList.contains('menu-open');
+    open ? closeDrawer() : openDrawer();
+  });
+  if(overlay) overlay.addEventListener('click', closeDrawer);
+  drawer.addEventListener('click', e=>{
+    const a = e.target.closest('a');
+    if(a) closeDrawer();
+  });
+  document.addEventListener('keydown', e=>{
+    if(e.key === 'Escape') closeDrawer();
+  });
+
+  // Reaproveita sua função de tema dentro da gaveta
+  if(themeDesktop && themeDrawer){
+    themeDrawer.addEventListener('click', ()=> themeDesktop.click());
+  }
+})();
