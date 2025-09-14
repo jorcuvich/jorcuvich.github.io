@@ -98,6 +98,10 @@ body {
   min-height: 60px;
 }
 
+.logo{
+  max-height: 58px;
+}
+
 .brand {
   display: flex;
   align-items: center;
@@ -110,6 +114,7 @@ body {
   display: flex;
   gap: 12px;
   align-items: center;
+  margin-left: 10px;
 }
 
 .nav-link {
@@ -123,6 +128,10 @@ body {
 .nav-link:focus {
   color: var(--text);
   background: rgba(255, 255, 255, 0.03);
+}
+
+.hero-links a, .link{
+  text-decoration: none;
 }
 
 .btn {
@@ -143,10 +152,12 @@ body {
   background: var(--brand);
   border-color: var(--brand);
   color: white;
+  text-decoration: none;
 }
 
 .btn-outline {
   background: transparent;
+  text-decoration: none;
 }
 
 .btn-ghost {
