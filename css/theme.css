@@ -428,3 +428,97 @@ body {
   height: 100%;
 }
 
+/* Acessibilidade básica */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+/* Botão hamburguer */
+.hamburger {
+  display: none;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  position: relative;
+}
+
+.hamburger .hamb-line {
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  top: 50%;
+  height: 2px;
+  background: var(--text);
+  box-shadow: 0 -8px 0 var(--text), 0 8px 0 var(--text);
+  transform: translateY(-1px);
+}
+
+/* Gaveta e overlay */
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, .45);
+  backdrop-filter: blur(2px);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .2s ease;
+  z-index: 39;
+}
+
+.drawer {
+  position: fixed;
+  inset: 0 auto 0 0;
+  width: min(86vw, 360px);
+  background: var(--surface);
+  border-right: 1px solid var(--border);
+  transform: translateX(-100%);
+  transition: transform .25s ease;
+  z-index: 40;
+}
+
+.drawer-inner {
+  padding: 20px;
+  display: grid;
+  gap: 10px;
+}
+
+.drawer a {
+  color: var(--text);
+  text-decoration: none;
+  padding: 10px 6px;
+  border-radius: 10px;
+}
+
+.drawer a:hover {
+  background: rgba(255, 255, 255, .04);
+}
+
+body.menu-open .drawer {
+  transform: translateX(0);
+}
+
+body.menu-open #overlay {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+body.menu-open {
+  overflow: hidden;
+}
+
+/* Responsividade */
+@media (max-width: 900px) {
+  .nav {
+    display: none;
+  }
+  .hamburger {
+    display: inline-block;
+  }
+}
