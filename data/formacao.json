@@ -1,0 +1,43 @@
+{
+  "mestrado": [
+    "Aprendizado de máquina supervisionado e validação",
+    "Métricas ROC-AUC, precisão, revocação e F1",
+    "Balanceamento de classes e seleção de atributos",
+    "Explicabilidade de modelos e apoio à decisão pública",
+    "Dissertação: predição de morte infantil no Paraná (2023)"
+  ],
+  "esp_software": [
+    "Metodologias ágeis aplicadas ao ensino de programação",
+    "Arquitetura, testes e qualidade de software",
+    "Estudo de caso com práticas ágeis em curso técnico (2024)"
+  ],
+  "esp_docencia": [
+    "Metodologias ativas e avaliação formativa",
+    "Peer Instruction em disciplinas de engenharia",
+    "Aplicações didáticas em computação (2022)"
+  ],
+  "cc": [
+    "Estruturas de dados, projeto de algoritmos e complexidade",
+    "Otimização combinatória e metaheurísticas",
+    "TCC: comparação de GRASP e algoritmo Morcego no caixeiro viajante (2024)"
+  ],
+  "lic": [
+    "Didática da matemática e formação pedagógica",
+    "Planejamento de ensino e avaliação (2022)"
+  ],
+  "mac": [
+    "Modelagem matemática, métodos numéricos e computação científica",
+    "Probabilidade e estatística aplicadas",
+    "Otimização, álgebra linear e EDOs",
+    "Programação e estruturas de dados",
+    "Trabalho final: introdução à computação quântica (2018)"
+  ],
+  "complementar": [
+    "Epidemiologia Matemática",
+    "Cálculo de probabilidades",
+    "Programação em R",
+    "Mercado financeiro: câmbio, operação, liquidação, custódia e fundos",
+    "Java e orientação a objetos para web",
+    "Resolução de problemas e criatividade"
+  ]
+}

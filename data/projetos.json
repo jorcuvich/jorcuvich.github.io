@@ -1,0 +1,61 @@
+[
+  {
+    "titulo": "TRI em Educação",
+    "desc": "Análise de coerência e proficiência com relatórios para tomada de decisão na escola.",
+    "categoria": [
+      "educacao",
+      "ia",
+      "web"
+    ],
+    "links": [
+      {
+        "nome": "demo",
+        "url": "#"
+      },
+      {
+        "nome": "código",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "titulo": "Predição de Mortalidade Infantil",
+    "desc": "Modelos explicáveis para priorização territorial em saúde.",
+    "categoria": [
+      "ia"
+    ],
+    "links": [
+      {
+        "nome": "pdf dissertação",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "titulo": "Mapa Interativo do Paraná",
+    "desc": "Indicadores educacionais por microrregião em site estático.",
+    "categoria": [
+      "web",
+      "educacao"
+    ],
+    "links": [
+      {
+        "nome": "site",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "titulo": "Falhas de Software",
+    "desc": "Regressão logística com foco em interpretabilidade. Implementação em R.",
+    "categoria": [
+      "ia"
+    ],
+    "links": [
+      {
+        "nome": "repositório",
+        "url": "#"
+      }
+    ]
+  }
+]

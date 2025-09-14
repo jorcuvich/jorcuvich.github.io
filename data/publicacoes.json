@@ -1,0 +1,27 @@
+[
+  {
+    "titulo": "Predição de morte de crianças abaixo de 1 ano no estado do Paraná",
+    "veiculo": "Observatorio de la Economía Latinoamericana, 2025",
+    "link": "#"
+  },
+  {
+    "titulo": "Uma introdução à Computação Quântica",
+    "veiculo": "Trabalho conclusivo, 2018",
+    "link": "#"
+  },
+  {
+    "titulo": "Comparação dos algoritmos GRASP e MORCEGO na solução do problema do caixeiro viajante",
+    "veiculo": "TCC em Ciência da Computação, 2024",
+    "link": "#"
+  },
+  {
+    "titulo": "Aplicação de Metodologias Ágeis no Ensino de Programação",
+    "veiculo": "Trabalho de Especialização em Engenharia de Software, 2024",
+    "link": "#"
+  },
+  {
+    "titulo": "Metodologias Ativas no Ensino de Computação para Engenharia: Peer Instruction",
+    "veiculo": "Trabalho de Especialização em Docência em Ciência e TI, 2022",
+    "link": "#"
+  }
+]

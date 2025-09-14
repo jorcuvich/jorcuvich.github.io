@@ -1,0 +1,103 @@
+{
+  "orientacoes": [
+    {
+      "titulo": "Resolução de Labirintos: comparação entre algoritmos DFS, BFS e A*",
+      "aluno": "Cristovão Martins de Souza",
+      "nivel": "Graduação",
+      "status": "Em andamento",
+      "ano": "2025",
+      "resumo": "Estudo comparativo de busca em grafos com métricas de desempenho."
+    },
+    {
+      "titulo": "Otimização da predição de falhas de software: uma abordagem com regressão logística",
+      "aluno": "Allyson Menezes Jandrey",
+      "nivel": "Graduação",
+      "status": "Concluído",
+      "ano": "2025",
+      "resumo": "Modelagem preditiva com foco em interpretabilidade e métricas."
+    },
+    {
+      "titulo": "Do prato à análise: viabilidade de uma nova abordagem para o monitoramento de consumo diário usando ChatGPT - 4o - mini",
+      "aluno": "Luiz Henrique Alves Rodrigues",
+      "nivel": "Graduação",
+      "status": "Concluído",
+      "ano": "2025",
+      "resumo": "Aplicação de LLMs para coleta e análise de dados pessoais."
+    }
+  ],
+  "eventos": [
+    {
+      "titulo": "II Encontro de Matemática Universitária  -  UFSC",
+      "ano": "2005",
+      "papel": "Participante",
+      "local": "UFSC",
+      "cidade": "Florianópolis",
+      "link": "https://petmatematica.ufsc.br",
+      "slides": ""
+    },
+    {
+      "titulo": "Semana da Computação do IME - USP",
+      "ano": "2009",
+      "papel": "Participante",
+      "local": "Instituto de Matemática e Estatística  -  USP",
+      "cidade": "São Paulo",
+      "slides": "",
+      "link": "https://bccdev.ime.usp.br"
+    },
+    {
+      "titulo": "EIAGIME 2010  -  Encontro Internacional dos Alunos de Graduação do IME - USP",
+      "ano": "2010",
+      "papel": "Participante",
+      "local": "IME - USP",
+      "cidade": "São Paulo",
+      "slides": "",
+      "link": "https://www.ime.usp.br"
+    },
+    {
+      "titulo": "SEDCITEC  -  Semana de Educação, Ciência e Tecnologia do IFSP, Campus São Paulo",
+      "ano": "2010",
+      "papel": "Participante",
+      "local": "IFSP  -  Campus São Paulo",
+      "cidade": "São Paulo",
+      "slides": "",
+      "link": "https://eventos.ifsp.edu.br/"
+    },
+    {
+      "titulo": "IV ConTECE  -  Congresso de Tecnologias, Engenharias e Ciências Exatas",
+      "ano": "2019",
+      "papel": "Ministrante de minicurso",
+      "local": "Unioeste e PTI",
+      "cidade": "Foz do Iguaçu",
+      "link": "https://eventos.unioeste.br/"
+    },
+    {
+      "titulo": "Palestra GNU/Linux  -  LAESA UniAmérica",
+      "ano": "2025",
+      "papel": "Palestrante",
+      "local": "LAESA UniAmérica",
+      "cidade": "Foz do Iguaçu",
+      "link": "https://www.instagram.com/laesa.uniamerica/"
+    }
+
+  ],
+  "bancas": [
+    {
+      "titulo": "Otimização da predição de falhas de software: uma abordagem com regressão logística",
+      "autor": "Allyson Menezes Jandrey",
+      "ano": "2025",
+      "curso": "Engenharia de Software"
+    },
+    {
+      "titulo": "Do prato à análise: a viabilidade de uma nova abordagem para o monitoramento de consumo diário usando ChatGPT - 4o - mini",
+      "autor": "Luiz Henrique Alves Rodrigues",
+      "ano": "2025",
+      "curso": "Engenharia de Software"
+    },
+    {
+      "titulo": "Entendendo a relação entre cobertura e eficácia de testes unitários automatizados em aplicações web desenvolvidas com Spring Boot",
+      "autor": "Lucas Mendes Pereira",
+      "ano": "2025",
+      "curso": "Engenharia de Software"
+    }
+  ]
+}

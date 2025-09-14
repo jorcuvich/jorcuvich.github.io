@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="pt-br" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wagner Jorcuvich | Educação e TI</title>
+  <meta name="description" content="Portfólio profissional de Wagner Jorcuvich. Educação e Tecnologia da Informação.">
+  <link rel="stylesheet" href="css/theme.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#inicio">
+        <img src="assets/logo.png" alt="Marca Wagner Jorcuvich" width="28" height="28">
+        <strong>Wagner Jorcuvich</strong>
+      </a>
+      <nav class="nav">
+        <a href="#sobre" class="nav-link">Sobre</a>
+        <a href="#formacao" class="nav-link">Formação</a>
+        <a href="#atuacao" class="nav-link">Atuação</a>
+        <a href="#projetos" class="nav-link">Projetos</a>
+        <a href="#orientacoes" class="nav-link">Orientações</a>
+        <a href="#eventos" class="nav-link">Eventos</a>
+        <a href="#bancas" class="nav-link">Bancas</a>
+        <a href="#publicacoes" class="nav-link">Publicações</a>
+        <a href="#contato" class="nav-link">Contato</a>
+        <button id="toggle-theme" class="btn btn-ghost" aria-pressed="true" title="Alternar tema">Tema</button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="inicio">
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1>Educação em Exatas e<br> Tecnologia da Informação</h1>
+          <p>Docência, ciência de dados aplicada e desenvolvimento web. Avaliação educacional, TRI, modelagem preditiva e materiais didáticos digitais.</p>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#projetos">Ver projetos</a>
+            <a class="btn btn-outline" href="#contato">Contato</a>
+          </div>
+          <ul class="hero-links" id="hero-links"></ul>
+        </div>
+        <div class="hero-media">
+          <img src="assets/foto.jpeg" alt="Retrato profissional" class="portrait">
+          <div class="stat">
+            <span class="stat-value" data-target="22">0</span>
+            <span class="stat-label">anos de atuação</span>
+          </div>
+          <!-- <div class="stat">
+            <span class="stat-value" data-target="40">0</span>
+            <span class="stat-label">projetos e materiais</span>
+          </div> -->
+        </div>
+      </div>
+      <canvas id="bg" aria-hidden="true"></canvas>
+    </section>
+
+    <section id="sobre" class="section">
+      <div class="container split">
+        <div>
+          <h2>Sobre</h2>
+          <p>Professor de tecnologia no ensino superior e técnico. Interesse em metodologias ativas, ciência de dados educacionais e engenharia de software com foco no ensino.</p>
+          <ul class="list">
+            <li>Ciência de dados educacionais e TRI</li>
+            <li>Ciência de dados em saúde pública</li>
+            <li>Desenvolvimento web didático</li>
+            <li>TRI e avaliação em larga escala</li>
+          </ul>
+        </div>
+        <aside class="card">
+          <h3>Áreas de ensino</h3>
+          <div class="tags">
+            <span class="tag">Algoritmos e Estruturas</span>
+            <span class="tag">Ciência de Dados</span>
+            <span class="tag">Programação Web</span>
+            <span class="tag">IoT</span>
+            <span class="tag">Matemática</span>
+            <span class="tag">Estatística</span>
+            <span class="tag">Otimização</span>
+            <span class="tag">Governança em TI</span>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="formacao" class="section section-muted">
+      <div class="container">
+        <h2>Formação</h2>
+        <div class="grid cards" id="grid-formacao"></div>
+      </div>
+    </section>
+
+    <section id="atuacao" class="section">
+      <div class="container">
+        <h2>Atuação</h2>
+        <ol class="timeline">
+          <li><div class="time">2025 a atual</div><div class="item"><h3>Professor | Graduação</h3><p>AED. Ciência de Dados. Governança. IoT.</p></div></li>
+          <li><div class="time">2023 a atual</div><div class="item"><h3>Professor | Educação Tecnológica</h3><p>Ciência de Dados. Programação Web e Mobile. Back End. Robótica.</p></div></li>
+          <li><div class="time">2014 a 2017</div><div class="item"><h3>Professor | Ensino Médio</h3><p>Matemática.</p></div></li>
+          <li><div class="time">2008 a 2012</div><div class="item"><h3>Mercado Financeiro</h3><p>Quantitative Trading. ALM. Risco. BTC (CBLC).</p></div></li>
+          <li><div class="time">2003 a 2008</div><div class="item"><h3>Professor | Pré-vestibular</h3><p>Matemática.</p></div></li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="projetos" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Projetos</h2>
+          <div class="filters">
+            <button class="chip is-active" data-cat="todos">Todos</button>
+            <button class="chip" data-cat="educacao">Educação</button>
+            <button class="chip" data-cat="ia">IA</button>
+            <button class="chip" data-cat="web">Web</button>
+            <input class="input" id="q" placeholder="Buscar por título">
+          </div>
+        </div>
+        <div class="grid" id="grid-projetos"></div>
+        <dialog id="dlg-projeto" class="dialog">
+          <article class="dialog-card">
+            <button class="btn btn-ghost close" aria-label="Fechar">x</button>
+            <h3 class="dlg-title"></h3>
+            <p class="dlg-desc"></p>
+            <ul class="dlg-links"></ul>
+            <canvas id="chart" width="720" height="260" aria-label="Gráfico de exemplo"></canvas>
+          </article>
+        </dialog>
+      </div>
+    </section>
+
+    <section id="orientacoes" class="section">
+      <div class="container">
+        <h2>Orientações Acadêmicas</h2>
+        <div class="grid cards" id="lista-orientacoes"></div>
+      </div>
+    </section>
+
+    <section id="eventos" class="section section-muted">
+      <div class="container">
+        <h2>Eventos e Palestras</h2>
+        <div class="grid cards" id="lista-eventos"></div>
+      </div>
+    </section>
+
+    <section id="bancas" class="section">
+      <div class="container">
+        <h2>Bancas</h2>
+        <div class="grid cards" id="lista-bancas"></div>
+      </div>
+    </section>
+
+    <section id="publicacoes" class="section section-muted">
+      <div class="container">
+        <h2>Publicações</h2>
+        <ul class="pubs" id="lista-pubs"></ul>
+      </div>
+    </section>
+
+    <section id="contato" class="section">
+      <div class="container split">
+        <div>
+          <h2>Contato</h2>
+          <p>Use o formulário ao lado ou escreva para <button id="btn-email" class="link" data-email="jorcuvich@gmail.com">copiar email</button>.</p>
+          <p>Também estou em: <a id="lnk-linkedin" href="https://www.linkedin.com/in/jorcuvich/" target="_blank" rel="noopener" class="link">LinkedIn</a> · <a id="lnk-instagram" href="https://www.instagram.com/wagner.jorcuvich/" target="_blank" rel="noopener" class="link">Instagram</a></p>
+          <p>Retorno em horário comercial.</p>
+        </div>
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdtyOsp-4biSRcUKMxj-7JwT-HR-Y3EliuGCSKTq-QzIq_MMg/viewform?embedded=true" width="540" height="615" frameborder="0" marginheight="0" marginwidth="0"  style="border:none;">Carregando…</iframe>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <small>© <span id="ano"></span> Wagner Jorcuvich. Todos os direitos reservados.</small>
+    </div>
+  </footer>
+
+  <script src="js/bg.js" type="module"></script>
+  <script src="js/app.js" type="module"></script>
+
+  <script type="application/json" id="data-projetos">[{"titulo": "TRI em Educação", "desc": "Análise de coerência e proficiência com relatórios para tomada de decisão na escola.", "categoria": ["educacao", "ia", "web"], "links": [{"nome": "demo", "url": "#"}, {"nome": "código", "url": "#"}]}, {"titulo": "Predição de Mortalidade Infantil", "desc": "Modelos explicáveis para priorização territorial em saúde.", "categoria": ["ia"], "links": [{"nome": "pdf dissertação", "url": "#"}]}, {"titulo": "Mapa Interativo do Paraná", "desc": "Indicadores educacionais por microrregião em site estático.", "categoria": ["web", "educacao"], "links": [{"nome": "site", "url": "#"}]}, {"titulo": "Labirintos com BFS DFS A*", "desc": "Comparação visual de algoritmos de busca para fins didáticos.", "categoria": ["educacao", "web"], "links": [{"nome": "demo", "url": "#"}]}, {"titulo": "Falhas de Software", "desc": "Regressão logística com foco em interpretabilidade. Implementação em R.", "categoria": ["ia"], "links": [{"nome": "repositório", "url": "#"}]}]</script>
+  <script type="application/json" id="data-pubs">[{"titulo": "Predição de morte de crianças abaixo de 1 ano no estado do Paraná", "veiculo": "Observatorio de la Economía Latinoamericana, 2025", "link": "#"}, {"titulo": "Uma introdução à Computação Quântica", "veiculo": "Trabalho conclusivo, 2018", "link": "#"}]</script>
+  <script type="application/json" id="profile">{"email": "jorcuvich@gmail.com", "linkedin": "https://www.linkedin.com/in/jorcuvich/", "instagram": "https://www.instagram.com/wagner.jorcuvich/", "orcid": "https://orcid.org/0000-0002-3183-9883", "scholar": "", "researchgate": ""}</script>
+  <script type="application/json" id="extra">{"orientacoes": [{"titulo": "Resolução de Labirintos: comparação entre algoritmos DFS, BFS e A*", "aluno": "Cristovão Martins de Souza", "nivel": "Graduação", "status": "Em andamento", "ano": "2025", "resumo": "Estudo comparativo de busca em grafos com métricas de desempenho."}, {"titulo": "Otimização da predição de falhas de software: uma abordagem com regressão logística", "aluno": "Allyson Menezes Jandrey", "nivel": "Graduação", "status": "Concluído", "ano": "2025", "resumo": "Modelagem preditiva com foco em interpretabilidade e métricas."}, {"titulo": "Do prato à análise: viabilidade de uma nova abordagem para o monitoramento de consumo diário usando ChatGPT-4o-mini", "aluno": "Luiz Henrique Alves Rodrigues", "nivel": "Graduação", "status": "Concluído", "ano": "2025", "resumo": "Aplicação de LLMs para coleta e análise de dados pessoais."}], "eventos": [{"titulo": "Minicurso Análise exploratória de dados com R", "ano": "2024", "papel": "Professor de minicurso", "local": "IV Congresso de Tecnologias, Engenharias e Ciências Exatas", "cidade": "Foz do Iguaçu PR", "instituicoes": "PTI e Unioeste", "slides": "slides/minicurso-r-aed.pdf"}, {"titulo": "Palestra GNU/Linux e software livre", "ano": "2024", "papel": "Palestrante", "local": "LAESA", "cidade": "Uniamérica", "slides": "slides/gnu-linux-software-livre.pdf"}, {"titulo": "Encontro de Tecnologia em São Paulo", "ano": "2011", "papel": "Participante", "local": "São Paulo SP", "cidade": "São Paulo", "slides": "slides/sp-tech-2011.pdf"}, {"titulo": "Semana de Computação de São Paulo", "ano": "2009", "papel": "Participante", "local": "São Paulo SP", "cidade": "São Paulo", "slides": "slides/sp-semana-comp-2009.pdf"}, {"titulo": "Evento de Matemática", "ano": "2005", "papel": "Participante", "local": "UFSC", "cidade": "Florianópolis SC", "slides": "slides/ufsc-matematica-2005.pdf"}], "bancas": [{"titulo": "Otimização da predição de falhas de software: uma abordagem com regressão logística", "autor": "Allyson Menezes Jandrey", "ano": "2025", "curso": "Engenharia de Software"}, {"titulo": "Do prato à análise: a viabilidade de uma nova abordagem para o monitoramento de consumo diário usando ChatGPT-4o-mini", "autor": "Luiz Henrique Alves Rodrigues", "ano": "2025", "curso": "Engenharia de Software"}, {"titulo": "Entendendo a relação entre cobertura e eficácia de testes unitários automatizados em aplicações web desenvolvidas com Spring Boot", "autor": "Lucas Mendes Pereira", "ano": "2025", "curso": "Engenharia de Software"}], "curiosidades": ["Viagens com foco em cultura e natureza", "Leitura de ficção científica: Arthur C. Clarke, Isaac Asimov, Philip K. Dick, William Gibson", "Interesse por software livre e GNU/Linux", "Visualização de dados e mapas temáticos"], "frases": [{"autor": "Arthur C. Clarke", "texto": "Qualquer tecnologia suficientemente avançada é indistinguível da magia."}, {"autor": "Isaac Asimov", "texto": "A violência é o último refúgio do incompetente."}, {"autor": "Philip K. Dick", "texto": "A realidade é aquilo que, quando você deixa de acreditar, não desaparece."}, {"autor": "William Gibson", "texto": "O futuro já está aqui, só não está distribuído de maneira uniforme."}, {"autor": "Carl Sagan", "texto": "Em algum lugar, algo incrível está esperando para ser descoberto."}]}</script>
+</body>
+</html>
