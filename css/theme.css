@@ -43,7 +43,7 @@
   --bg: #f6f7fb;
   --surface: #ffffff;
   --surface-2: #f2f4f8;
-  --text: #141821;
+  --text: #211414;
   --muted: #02070f;
   --brand: #2f6fff;
   --brand-2: #7fa6ff;
@@ -127,8 +127,8 @@ body {
 
 .btn {
   appearance: none;
-  border: 1px solid var(--border);
-  background: var(--surface);
+  border: 2px solid var(--border);
+  background: var(--surface-2);
   color: var(--text);
   padding: 10px 14px;
   border-radius: 12px;
@@ -150,7 +150,8 @@ body {
 }
 
 .btn-ghost {
-  background: transparent;
+  background: solid;
+  border: 2px solid black;
 }
 
 .link {
@@ -464,12 +465,12 @@ body {
 .overlay {
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, .45);
+  background: rgba(0, 0, 0);
   backdrop-filter: blur(2px);
   opacity: 0;
   pointer-events: none;
-  transition: opacity .2s ease;
-  z-index: 39;
+  transition: ease;
+  z-index: 390;
 }
 
 .drawer {
@@ -483,6 +484,7 @@ body {
   z-index: 40;
 }
 
+
 .drawer-inner {
   padding: 20px;
   display: grid;
@@ -490,14 +492,17 @@ body {
 }
 
 .drawer a {
+  background-color: var(--brand);
   color: var(--text);
   text-decoration: none;
   padding: 10px 6px;
   border-radius: 10px;
+  border: solid var(--border) 2px;
 }
 
 .drawer a:hover {
-  background: rgba(255, 255, 255, .04);
+  background: var(--brand-2);
+  color: var(--text);
 }
 
 body.menu-open .drawer {
