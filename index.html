@@ -11,10 +11,19 @@
   <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="#inicio">
-        <img src="assets/logo.png" alt="Marca Wagner Jorcuvich" width="28" height="28">
+        <img src="assets/mark.svg" alt="Marca Wagner Jorcuvich" width="28" height="28">
         <strong>Wagner Jorcuvich</strong>
       </a>
-      <nav class="nav">
+  
+      <!-- Botão hambúrguer para telas pequenas -->
+      <button id="btn-menu" class="btn btn-ghost hamburger"
+              aria-label="Abrir menu" aria-controls="drawer-nav" aria-expanded="false">
+        <span class="hamb-line"></span>
+        <span class="sr-only">Menu</span>
+      </button>
+  
+      <!-- Navegação desktop continua visível no desktop -->
+      <nav class="nav" id="site-nav">
         <a href="#sobre" class="nav-link">Sobre</a>
         <a href="#formacao" class="nav-link">Formação</a>
         <a href="#atuacao" class="nav-link">Atuação</a>
@@ -27,7 +36,26 @@
         <button id="toggle-theme" class="btn btn-ghost" aria-pressed="true" title="Alternar tema">Tema</button>
       </nav>
     </div>
+  
+    <!-- Gaveta mobile e overlay -->
+    <div id="overlay" class="overlay" hidden></div>
+    <nav id="drawer-nav" class="drawer" aria-hidden="true">
+      <div class="drawer-inner">
+        <a href="#sobre">Sobre</a>
+        <a href="#formacao">Formação</a>
+        <a href="#atuacao">Atuação</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#orientacoes">Orientações</a>
+        <a href="#eventos">Eventos</a>
+        <a href="#bancas">Bancas</a>
+        <a href="#publicacoes">Publicações</a>
+        <a href="#contato">Contato</a>
+        <hr>
+        <button id="drawer-theme" class="btn btn-ghost" type="button">Tema</button>
+      </div>
+    </nav>
   </header>
+
 
   <main id="inicio">
     <section class="hero">
