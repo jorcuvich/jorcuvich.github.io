@@ -198,7 +198,10 @@ body {
   grid-template-columns: 3fr 2fr;
   gap: 20px;
 }
-
+.projeticos{
+  display: flex;
+  flex-wrap: wrap;
+}
 @media (max-width: 900px) {
   .split {
     grid-template-columns: 1fr;
