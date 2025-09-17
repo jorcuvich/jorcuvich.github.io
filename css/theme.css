@@ -100,6 +100,7 @@ body {
 
 .logo{
   max-height: 58px;
+  /* filter: invert(100%); */
 }
 
 .brand {
@@ -270,7 +271,7 @@ body {
   display: grid;
   grid-template-columns: 3fr 2fr;
   gap: 20px;
-  padding: 72px 0;
+  padding: 72px 10px;
 }
 
 @media (max-width: 900px) {
