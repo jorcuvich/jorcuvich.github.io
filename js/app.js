@@ -104,9 +104,9 @@ async function loadJSON(path, tagId) {
   //if (profile.orcid) items.push(`<li><a href="${profile.orcid}" target="_blank" rel="noopener" class="link">ORCID</a></li>`);
   //if (profile.scholar) items.push(`<li><a href="${profile.scholar}" target="_blank" rel="noopener" class="link">Google Scholar</a></li>`);
   //if (profile.researchgate) items.push(`<li><a href="${profile.researchgate}" target="_blank" rel="noopener" class="link">ResearchGate</a></li>`);
-  if (profile.linkedin) items.push(`<li><a href="${profile.linkedin}" target="_blank" rel="noopener" class="link">LinkedIn</a></li>`);
-  if (profile.instagram) items.push(`<li><a href="${profile.instagram}" target="_blank" rel="noopener" class="link">Instagram</a></li>`);
-  if (profile.instagram) items.push(`<li><a href="${profile.github}" target="_blank" rel="noopener" class="link">GitHub</a></li>`);
+  if (profile.linkedin) items.push(`<li><a href="${profile.linkedin}" target="_blank" rel="noopener noreferrer" class="link">LinkedIn</a></li>`);
+  if (profile.instagram) items.push(`<li><a href="${profile.instagram}" target="_blank" rel="noopener noreferrer" class="link">Instagram</a></li>`);
+  if (profile.instagram) items.push(`<li><a href="${profile.github}" target="_blank" rel="noopener noreferrer" class="link">GitHub</a></li>`);
 
 
   ul.innerHTML = items.join('');
