@@ -1,0 +1,10 @@
+{
+    "devDependencies": {
+        "@types/bun": "latest",
+        "vite": "latest"
+    },
+
+    "scripts": {
+        "dev": "vite"
+    }
+}

@@ -1,3 +1,6 @@
+/* BOXICONS */
+@import url('https://unpkg.com/boxicons@latest/css/boxicons.min.css');
+
 :root {
   --bg: #0f1115;
   --surface: #141821;
@@ -52,6 +55,10 @@
 
 * {
   box-sizing: border-box;
+
+  /* FOR THEME TRANSITION - ONLY TARGETING PROPERTIES THAT CHANGE THE UI */
+  transition: background 0.2s ease, border 0.2s ease, color 0.2s ease;
+  will-change: background, border, color;
 }
 
 html {
@@ -164,6 +171,20 @@ body {
 .btn-ghost {
   background: solid;
   border: 2px solid black;
+}
+
+.btn-theme {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 40px;
+  width: 40px;
+  border-radius: 100px;
+}
+
+.btn-theme > i {
+  font-size: 1rem;
 }
 
 .link {
