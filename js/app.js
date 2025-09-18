@@ -101,9 +101,9 @@ async function loadJSON(path, tagId) {
   const ul = $('#hero-links');
   const items = [];
 
-  //if (profile.orcid) items.push(`<li><a href="${profile.orcid}" target="_blank" rel="noopener" class="link">ORCID</a></li>`);
-  //if (profile.scholar) items.push(`<li><a href="${profile.scholar}" target="_blank" rel="noopener" class="link">Google Scholar</a></li>`);
-  //if (profile.researchgate) items.push(`<li><a href="${profile.researchgate}" target="_blank" rel="noopener" class="link">ResearchGate</a></li>`);
+  //if (profile.orcid) items.push(`<li><a href="${profile.orcid}" target="_blank" rel="noopener noreferrer" class="link">ORCID</a></li>`);
+  //if (profile.scholar) items.push(`<li><a href="${profile.scholar}" target="_blank" rel="noopener noreferrer" class="link">Google Scholar</a></li>`);
+  //if (profile.researchgate) items.push(`<li><a href="${profile.researchgate}" target="_blank" rel="noopener noreferrer" class="link">ResearchGate</a></li>`);
   if (profile.linkedin) items.push(`<li><a href="${profile.linkedin}" target="_blank" rel="noopener noreferrer" class="link">LinkedIn</a></li>`);
   if (profile.instagram) items.push(`<li><a href="${profile.instagram}" target="_blank" rel="noopener noreferrer" class="link">Instagram</a></li>`);
   if (profile.instagram) items.push(`<li><a href="${profile.github}" target="_blank" rel="noopener noreferrer" class="link">GitHub</a></li>`);
@@ -194,7 +194,7 @@ async function loadJSON(path, tagId) {
     dlg.querySelector('.dlg-desc').textContent = p.desc;
     const ul = dlg.querySelector('.dlg-links');
     ul.innerHTML = p.links.map(l =>
-      `<li><a class="link" target="_blank" rel="noopener" href="${l.url}">${l.nome}</a></li>`).join('');
+      `<li><a class="link" target="_blank" rel="noopener noreferrer" href="${l.url}">${l.nome}</a></li>`).join('');
     dlg.showModal();
     drawChart();
   });
@@ -205,7 +205,7 @@ async function loadJSON(path, tagId) {
   // Publicações
   const ulP = $('#lista-pubs');
   ulP.innerHTML = pubs.map(p =>
-    `<li><strong>${p.titulo}</strong> | <em>${p.veiculo}</em> | <a class="link" target="_blank" rel="noopener" href="${p.link}">acessar</a></li>`
+    `<li><strong>${p.titulo}</strong> | <em>${p.veiculo}</em> | <a class="link" target="_blank" rel="noopener noreferrer" href="${p.link}">acessar</a></li>`
   ).join('');
 })();
 
@@ -266,7 +266,7 @@ function drawChart() {
         <h4>${e.titulo}</h4>
         <div class="tagline">${e.ano} • ${e.papel} • ${e.local || ''}</div>
         ${e.tema ? `<p class='muted'>${e.tema}</p>` : ''}
-        ${e.slides ? `<div class='row'><a class='link' target='_blank' rel='noopener' href='${e.slides}'>slides</a></div>` : ''}
+        ${e.slides ? `<div class='row'><a class='link' target='_blank' rel='noopener noreferrer' href='${e.slides}'>slides</a></div>` : ''}
       </article>`).join('');
   }
 
