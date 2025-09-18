@@ -6,6 +6,8 @@ $('#ano').textContent = new Date().getFullYear();
 
 // Alternância de tema: padrão por preferência do sistema, pode ser alterado via botão
 const btnTheme = $('#toggle-theme');
+const btnThemeIcon = $('#theme-icon', btnTheme)
+
 let chosen = localStorage.getItem('themeChoice') ||
   (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
 
@@ -13,6 +15,9 @@ function applyTheme(name) {
   document.documentElement.setAttribute('data-theme', name);
   localStorage.setItem('themeChoice', name);
   btnTheme.setAttribute('aria-pressed', name === 'dark' ? 'true' : 'false');
+
+  btnThemeIcon.classList.remove('bxs-sun', 'bxs-moon');
+  btnThemeIcon.classList.add(`bxs-${name === 'dark' ? 'sun' : 'moon'}`);
 }
 
 applyTheme(chosen);
